@@ -31,7 +31,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0,50px;
+    padding: 0 50px;
     height: 80px;
     margin-left: 60px;
     margin-right: 70px;
@@ -44,7 +44,7 @@ nav .left a {
 }
 nav .right a {
     color: var(--text-color);
-    margin: 0,10px ;
+    margin: 0 10px ;
     
 }
 
@@ -154,6 +154,154 @@ nav .right a span {
 }
 
 
+/* PROJECTS SECTION */
+
+.projects-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.projects-section h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.projects-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card{
+    width: 300px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+.project-card h3{
+    margin-bottom: 10px;
+}
+
+.project-card p{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.project-links a{
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+
+/* RESUME SECTION */
+
+.resume-section{
+    padding: 0 50px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.resume-section h2{
+    font-size: 35px;
+}
+
+.resume-section p{
+    margin-top: 10px;
+}
+
+.resume-btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--link-color);
+    color: white;
+    border-radius: 5px;
+}
+
+.resume-btn:hover{
+    filter: brightness(.9);
+}
+
+
+
+
+/* Section 5 : Contact */
+
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.contact-section h2{
+    font-size: 35px;
+}
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text{
+    flex: 3;
+    margin-top: 20px;
+}
+
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contact-section .group form input,
+.contact-section .group form textarea{
+    font-family: 'Poppins',sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+
+}
+
+.contact-section .group form button{
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.contact-section .group form button:hover{
+    filter: brightness(.9);
+}
+
+
+/* FOOTER */
+
+.footer{
+    background-color: #1a1c20;
+    color: white;
+    padding: 20px 50px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a{
+    color: white;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
 @media (max-width:850px) {
     /* Section 1 HERO */
     .hero-section .text h2 {
@@ -214,5 +362,27 @@ nav .right a span {
     font-size: 15px;
     }
 
+
+}
+
+@media (max-width:600px){
+
+    .projects-section{
+        padding: 0 20px;
+    }
+
+    .project-card{
+        width: 100%;
+    }
+
+    .resume-section{
+        padding: 0 20px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
 
 }
